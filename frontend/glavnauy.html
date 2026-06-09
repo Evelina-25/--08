@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Управление коечным фондом</title>
+    <link rel="stylesheet" href="glavnauy.css">
+</head>
+<body>
+
+<header class="header">
+
+    <div class="header-content">
+
+        <img
+            src="logo.png"
+            alt="Логотип"
+            class="logo">
+
+        <div class="header-title">
+            КГБУЗ «Детская городская больница, г. Рубцовск» - Управление коечным фондом
+        </div>
+
+    </div>
+
+</header>
+<h2>Фильтрация записей</h2>
+
+<form id="filterForm">
+
+    <label for="department">Отделение</label>
+    <select id="department" name="department">
+        <option value="">Все отделения</option>
+        <option>Отделение новорожденных</option>
+        <option>Педиатрическое отделение</option>
+        <option>Реанимация и интенсивная терапия</option>
+        <option>Дневной стационар</option>
+    </select>
+
+    <label for="status">Статус койки</label>
+    <select id="status" name="status">
+        <option value="">Все статусы</option>
+        <option>Свободна</option>
+        <option>Занята</option>
+        <option>На санитарной обработке</option>
+        <option>Временно недоступна</option>
+    </select>
+
+    <div class="buttons">
+
+        <button type="submit">Применить фильтр</button>
+
+        <button type="reset">Сбросить</button>
+
+        <button type="button" onclick="window.location.href='statistics.html'">
+            Статистика
+        </button>
+
+    </div>
+
+</form>
+
+<script src="glavnaya.js"></script>
+</body>
+</html>

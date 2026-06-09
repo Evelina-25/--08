@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Статистика коечного фонда</title>
+
+    <link rel="stylesheet" href="statistics.css">
+</head>
+
+<body>
+
+    <h1>
+        Статистика коечного фонда
+    </h1>
+
+   <div class="content">
+
+    <div class="stats">
+
+        <div class="card">
+            <h2>Всего коек</h2>
+            <p id="totalBeds">0</p>
+        </div>
+
+        <div class="card">
+            <h2>Занято коек</h2>
+            <p id="occupiedBeds">0</p>
+        </div>
+
+        <div class="card">
+            <h2>Свободно коек</h2>
+            <p id="freeBeds">0</p>
+        </div>
+
+        <div class="card">
+            <h2>Загрузка</h2>
+            <p id="occupancyPercent">0%</p>
+        </div>
+
+        <button
+            type="button"
+            onclick="window.location.href='glavnauy.html'">
+            Назад
+        </button>
+
+    </div>
+
+    <div class="charts">
+
+        <div class="chart-container">
+            <h3>Загруженность коечного фонда</h3>
+            <canvas id="pieChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h3>Количество коек по отделениям</h3>
+            <canvas id="departmentChart"></canvas>
+        </div>
+
+    </div>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="statistics.js"></script>
+
+</body>
+
+</html>

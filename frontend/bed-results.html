@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты коечного фонда</title>
+    <link rel="stylesheet" href="results.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-content">
+
+        <img
+            src="logo.png"
+            alt="Логотип"
+            class="logo">
+
+        <div class="header-title">
+            КГБУЗ «Детская городская больница, г. Рубцовск» - Управление коечным фондом
+        </div>
+
+    </div>
+
+</header>
+
+    <div class="container">
+
+        <button onclick="goBack()">
+            ← Назад к фильтрам
+        </button>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>№ койки</th>
+                    <th>Отделение</th>
+                    <th>Статус</th>
+                    <th>Пациент</th>
+                </tr>
+            </thead>
+
+            <tbody id="bedsTable"></tbody>
+
+        </table>
+<div class="actions">
+
+    <button onclick="exportReport()">
+        Экспорт отчета
+    </button>
+
+    <button onclick="printReport()">
+        Печать отчета
+    </button>
+
+</div>
+    </div>
+
+    <script src="results.js"></script>
+
+</body>
+
+</html>
